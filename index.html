@@ -448,7 +448,7 @@ body.intro-on .foot{display:none}
       : l == null ? "" : l > 0 ? `<span class="badge">เหลือ ${l} แก้ว</span>` : `<span class="badge out">รอบนี้ครบแล้ว</span>`;
     $("#demoNote").innerHTML = DEMO ? `<div class="demo">หน้าตัวอย่าง · ข้อมูลจากชีตจริงจะขึ้นเมื่อเปิดผ่านลิงก์ร้าน</div>` : "";
     const shop = C.shopUrl || "";
-    $("#links").innerHTML = shop ? `<a href="${esc(shop)}" target="_top">ไปหน้าร้าน ${esc(C.shopName)} แบบเต็ม 🏠</a>` : "";
+    $("#links").innerHTML = "";
     $("#tabOrder").setAttribute("aria-pressed", S.view === "order");
     $("#tabStatus").setAttribute("aria-pressed", S.view === "status");
   }
